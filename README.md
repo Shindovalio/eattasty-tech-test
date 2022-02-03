@@ -1,5 +1,4 @@
-# eattasty-tech-test
-Prototype web app for EatTasty
+# Prototype web app for EatTasty
 Basically: What will be needed is a technical exercise that has to do with EatTasty. Which has to do with selling and delivering food.
 
 A small webapp, mobileapp, etc.
