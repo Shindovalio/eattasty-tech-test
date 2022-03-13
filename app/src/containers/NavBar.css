@@ -1,0 +1,21 @@
+.navbar {
+	width: 100%;
+	height: var(--spacing-xxxl);
+	background-color: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 var(--spacing-xxxl);
+}
+.logo-container {
+	height: 75%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo-2 {
+	font-family: "Epilogue", sans-serif;
+	font-size: var(--font-size-xxs);
+	font-weight: 600;
+	margin-left: var(--spacing-xs);
+}

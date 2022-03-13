@@ -1,0 +1,51 @@
+.triple-dot-container {
+	position: relative;
+}
+.triple-dot-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: var(--circle-border);
+	height: var(--spacing-xl);
+	width: var(--spacing-xl);
+	position: relative;
+	transition: 0.1s;
+	cursor: pointer;
+}
+.triple-dot-btn:hover,
+.dot-menu-option:hover,
+.dot-btn-toggled {
+	background-color: var(--gray-hover);
+}
+.triple-dot-btn::before,
+.triple-dot-btn::after,
+.middle-dot {
+	content: "";
+	display: flex;
+	background-color: var(--black);
+	height: 10%;
+	width: 10%;
+	border-radius: var(--circle-border);
+	margin: 0 5%;
+}
+.triple-dot-menu {
+	position: absolute;
+	transform: translate(-35%, 5%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: var(--basic-border);
+	background-color: var(--white);
+	transition: 0.1s;
+	cursor: pointer;
+	overflow: hidden;
+	width: 7rem;
+	z-index: 5;
+}
+.triple-dot-menu:hover {
+	z-index: 10;
+}
+.dot-menu-option {
+	padding: var(--spacing-xs) var(--spacing-s);
+	width: 100%;
+}

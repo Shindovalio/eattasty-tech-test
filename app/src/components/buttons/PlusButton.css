@@ -1,0 +1,31 @@
+.plus-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	height: var(--spacing-m);
+	width: var(--spacing-m);
+	padding: 0 !important;
+	background-color: var(--et-orange);
+}
+.plus-btn::before,
+.plus-btn::after {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 5%;
+	width: 50%;
+	background-color: var(--black);
+}
+.plus-btn::before {
+	transform: rotate(90deg);
+}
+.plus-btn:hover {
+	background-color: var(--black);
+}
+.plus-btn:hover::before,
+.plus-btn:hover::after {
+	background-color: var(--et-orange);
+}

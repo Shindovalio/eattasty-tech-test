@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&family=Montserrat:wght@100;400;700&display=swap");
+@media only screen and (min-width: 1030px) {
+	* {
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 1030px) {
+	* {
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	* {
+		font-size: 16px;
+	}
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	word-wrap: break-word;
+	background-repeat: no-repeat;
+}
+body {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--light-gray);
+}
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+#root {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+/* Variables */
+:root {
+	/* Colors */
+	--white: rgb(255, 255, 255);
+	--light-gray: rgb(240, 240, 240);
+	--gray: rgb(200, 200, 200);
+	--dark-gray: rgb(140, 140, 140);
+	--black: rgb(0, 0, 0);
+	--gray-hover: rgba(0, 0, 0, 0.1);
+	--light-gray-hover: rgba(240, 240, 240, 0.1);
+	--orange: rgba(230, 135, 41, 1);
+	--orange-hover: rgb(255, 155, 55);
+	--et-orange: #ffbd1b;
+	/* Borders */
+	--basic-border: 10px;
+	--round-border: 50px;
+	--circle-border: 50%;
+	/* Spacing */
+	--spacing-xs: 0.5rem;
+	--spacing-s: 1rem;
+	--spacing-m: 1.5rem;
+	--spacing-l: 2rem;
+	--spacing-xl: 2.5rem;
+	--spacing-xxl: 3rem;
+	--spacing-xxxl: 4rem;
+	/* Font Size */
+	--font-size-xxs: 0.75rem;
+	--font-size-xs: 0.9rem;
+	--font-size-s: 1rem;
+}
+::selection {
+	background: var(--et-orange);
+	color: black;
+}
+.shadow {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.heavy-shadow {
+	box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1), 0px 2px 5px 0px rgba(50, 50, 93, 0.1),
+		0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+}
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 1.5rem;
+}
+h3 {
+	font-size: 1.25rem;
+}
+.normal {
+	font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+/* Overlays */
+.overlay {
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9500;
+	transition: all 1s;
+}
+.overlay-10k {
+	z-index: 10000 !important;
+}
+/* Basic Button */
+.basic-btn {
+	position: relative;
+	background-color: unset;
+	color: var(--white);
+	background-color: var(--orange);
+	outline: none;
+	border: none;
+	transition: 0.3s;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 1rem 2rem;
+	border: 1px solid var(--orange);
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+.basic-btn:hover {
+	background-color: var(--orange-hover);
+}
+.basic-btn:active {
+	transform: scale(0.95);
+}
+.noscroll {
+	overflow: hidden !important;
+}
+.y-scroll {
+	overflow-y: hidden !important;
+}
+.custom-scroll {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-color: lightgray rgba(0, 0, 0, 0);
+	scrollbar-width: thin;
+}
+/* width */
+.custom-scroll::-webkit-scrollbar {
+	width: 10px;
+}
+/* Track */
+.custom-scroll::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0);
+}
+/* Handle */
+.custom-scroll::-webkit-scrollbar-thumb {
+	background: lightgray;
+	border-radius: 50px;
+}
+/* Handle on hover */
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+.double-input-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+.btns-holder {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
